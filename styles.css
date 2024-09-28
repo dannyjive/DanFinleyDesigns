@@ -1,40 +1,64 @@
 /* div {
-        border: solid black;
-        border
-      } */
+  border: solid black;
+  border
+  } */
 
 /* .navbar {
     background-color: rgba(255, 255, 255, 0.339);
-} */
+    } */
+
+body {
+  font-family: "Eczar", serif;
+  background-image: url(img/PinholeAbstracts-7.jpg);
+  background-size: 100% 100%;
+}
+
 .eczarh1 {
   font-family: "Eczar", serif;
   font-optical-sizing: auto;
   font-weight: 800;
-  color: rgb(18, 174, 230);
+  color: rgb(102, 159, 202);
 }
 
-li {
+/* li {
     font-family: "Eczar", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     color: rgb(18, 174, 230);
-  }
-li, .text-dark {
-    font-family: "Eczar", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    color: rgb(18, 174, 230);
-    text-decoration: none;
-  }
+  } */
 
-h3,
-h6 {
+h3 {
   font-family: "Eczar", serif;
-  font-weight: 400;
-  color: white;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
 }
 
-body {
-  background-image: url(img/PinholeAbstracts-7.jpg);
-    background-size: 100% 100%;
+h5,
+p {
+  color: gray;
+}
+
+.card-title {
+  font-family: "Eczar", serif;
+  font-weight: 800;
+  color: rgb(102, 159, 202);
+}
+
+#copyright {
+  color: white;
+  font-family: "Eczar", serif;
+  font-weight: 400;
+}
+
+.navbar,
+.nav-link {
+  color: rgb(102, 159, 202);
+}
+
+.navbar a:hover {
+  color: rgb(163, 195, 230);
+}
+
+.active {
+  text-decoration-line: underline;
 }
