@@ -15,7 +15,7 @@ body {
 
 .eczarh1 {
   font-family: "Eczar", serif;
-  font-optical-sizing: auto;
+  font-size: x-large;
   font-weight: 800;
   color: rgb(102, 159, 202);
 }
@@ -47,7 +47,7 @@ p {
 #copyright {
   color: white;
   font-family: "Eczar", serif;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .navbar,
@@ -61,4 +61,8 @@ p {
 
 .active {
   text-decoration-line: underline;
+}
+
+hr {
+  color: white;
 }
