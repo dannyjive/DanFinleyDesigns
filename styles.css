@@ -1,9 +1,18 @@
 
-
-
 body {
   font-family: "Eczar", serif;
+  
 }
+
+.link {
+  color: rgb(102, 159, 202) !important; 
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(163, 195, 230) !important;
+}
+
 
 .bg-image {
   background-image: url(img/PinholeAbstracts-7.jpg);
@@ -28,7 +37,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     color: gray;
-    /* padding: .5em; */
+    padding: .3em;
   } 
 
 h3 {
@@ -39,6 +48,10 @@ h3 {
 
 h5,
 p {
+  color: gray;
+}
+
+h6 {
   color: gray;
 }
 
@@ -54,8 +67,6 @@ p {
   font-weight: 800;
 }
 
-
-
 .nav-link {
   color: rgb(102, 159, 202);
 }
@@ -69,8 +80,11 @@ p {
   color: rgb(102, 159, 202);
 }
 
-
-
 hr {
   color: white;
+}
+
+.divide {
+  color: gray;
+  width: 75%;
 }
