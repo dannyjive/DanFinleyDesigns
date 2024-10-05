@@ -1,3 +1,8 @@
+/* 
+.bb {
+  border: 1px solid black;
+  
+} */
 
 body {
   font-family: "Eczar", serif;
@@ -87,4 +92,8 @@ hr {
 .divide {
   color: gray;
   width: 75%;
+}
+
+iframe {
+filter: drop-shadow(5px 5px 5px gray);
 }
