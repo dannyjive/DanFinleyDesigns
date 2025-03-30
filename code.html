@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- Fontawesome -->
+    <!-- Font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -74,24 +74,162 @@
     </nav>
 
     <main class="container">
-      <div class="mt-4">
+      <!-- Filter Buttons -->
+      <div class="text-center custom-margin">
+        <button class="btn btn-primary btn-sm filter-btn" data-filter="all">
+          #all
+        </button>
+        <button class="btn btn-primary btn-sm filter-btn" data-filter="html">
+          #html
+        </button>
+        <button class="btn btn-primary btn-sm filter-btn" data-filter="css">
+          #css
+        </button>
+        <button
+          class="btn btn-primary btn-sm filter-btn"
+          data-filter="bootstrap"
+        >
+          #bootstrap
+        </button>
+        <button
+          class="btn btn-primary btn-sm filter-btn"
+          data-filter="javascript"
+        >
+          #javascript
+        </button>
+        <button class="btn btn-primary btn-sm filter-btn" data-filter="react">
+          #react
+        </button>
+        <button class="btn btn-primary btn-sm filter-btn" data-filter="redux">
+          #redux
+        </button>
+        <button class="btn btn-primary btn-sm filter-btn" data-filter="api">
+          #api
+        </button>
+        <button class="btn btn-primary btn-sm filter-btn" data-filter="game">
+          #game
+        </button>
+        <!-- <button class="btn btn-primary btn-sm filter-btn" data-filter="mongodb">
+          #mongodb
+        </button> -->
+      </div>
+      <div>
+        <!-- ROW 1 -->
+        <div class="row">
+          <!-- TODO standardize all thumbnail image sizes to 1x1 -->
+          <!-- Thumbnail 1 -->
+          <div
+            class="col-md-3 mb-3 filter-item"
+            data-category="html css javascript react"
+          >
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Investment Calculator</h5>
+                <img
+                  src="img/codeArt/investCalcScreenshot.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="img/codeArt/investCalcScreenshot.jpg"
+                  data-title="Investment Calculator"
+                  data-description="An investment calculator that calculates investment value, and interest based on user input of initial investment, annual investment, and expected return. #html #css #javascript #react"
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/dannyjive/React_Investment_Calculator/tree/main"} 
+                                  ]'
+                  alt="Investment Calculator"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnail 2 -->
+          <div
+            class="col-md-3 mb-3 filter-item"
+            data-category="html css javascript bootstrap react redux"
+          >
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Shopping Cart</h5>
+                <img
+                  src="img/codeArt/PokemonThumb.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="img/codeArt/PokemonLg.jpg"
+                  data-title="Pokemon Shopping Cart"
+                  data-description="A simple and fun shopping cart built with React, featuring Pokémon cards! This project helps reinforce key React concepts, including state management, props, and component composition. #html #css #javascript #react #redux"
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/dannyjive/shopping-cart-project"} 
+                                  ]'
+                  alt="Pokemon Shopping Cart"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnail 3 -->
+
+          <div
+            class="col-md-3 mb-3 filter-item"
+            data-category="html css javascript react api"
+          >
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Game of Thrones App</h5>
+                <img
+                  src="img/codeArt/GoTThumb.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="img/codeArt/GoTImage.jpg"
+                  data-title="Game of Thrones App"
+                  data-description="A Game of Thrones explorer that allows user to look at the characters, and houses from the books. Includes a light and dark mode."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/dannyjive/GameOfThrones"} 
+                                  ]'
+                  alt="Game of Thrones App"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMBNAIL 4 -->
+          <div class="col-md-3 mb-3 filter-item"
+          data-category="html css javascript react game">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Tic-Tac-Toe Game</h5>
+                <img
+                  src="img/codeArt/TicTacToeThumb.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="img/codeArt/TicTacToe.png"
+                  data-title="Tic-Tac-Toe Game"
+                  data-description="A Tic-Tac-Toe game built with React."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/dannyjive/React_TicTacToe_Proj"} 
+                                  ]'
+                  alt="Tic-Tac-Toe Game"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ROW 2 -->
         <div class="row">
           <!-- Thumbnail 1 -->
           <div class="col-md-3 mb-3">
             <div class="card mt-5">
               <div class="card-body">
-                <h5 class="card-title text-center">Investment Calculator</h5>
+                <h5 class="card-title text-center">Photog Portfolio</h5>
                 <img
                   src="img/codeArt/investment-calculator-logo.jpg"
                   class="card-img-top open-modal"
                   data-bs-toggle="modal"
                   data-bs-target="#infoModal"
                   data-img="img/codeArt/investCalcScreenshot.jpg"
-                  data-title="Investment Calculator"
+                  data-title="Photog Portfolio"
                   data-description="This investment calculator takes an initial investment, annual investment, and expected return, calculating investment value, interest, total interest and invested capital over years. This app was created with React."
-                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/dannyjive/React_Investment_Calculator/tree/main"} 
                                   ]'
-                  alt="Investment Calculator"
+                  alt="Photog Portfolio"
                 />
                 <p class="card-subtitle text-muted mt-2">
                   <span class="text-primary pill-rounded">#HTML</span>,
@@ -107,18 +245,18 @@
           <div class="col-md-3 mb-3">
             <div class="card mt-5">
               <div class="card-body">
-                <h5 class="card-title text-center">Investment Calculator</h5>
+                <h5 class="card-title text-center">Fave Movie App</h5>
                 <img
-                  src="img/codeArt/investment-calculator-logo.png"
+                  src="img/codeArt/investment-calculator-logo.jpg"
                   class="card-img-top open-modal"
                   data-bs-toggle="modal"
                   data-bs-target="#infoModal"
-                  data-img="Inktober_01_thumb.jpg"
-                  data-title="Investment Calculator"
-                  data-description="This investment calculator was created in React."
+                  data-img="#.jpg"
+                  data-title="Fave Movie App"
+                  data-description="This was created in React."
                   data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
                                   ]'
-                  alt="Investment Calculator"
+                  alt="Fave Movie App"
                 />
                 <p class="card-subtitle text-muted mt-2">
                   <span class="text-primary pill-rounded">#HTML</span>,
@@ -135,18 +273,129 @@
           <div class="col-md-3 mb-3">
             <div class="card mt-5">
               <div class="card-body">
-                <h5 class="card-title text-center">Investment Calculator</h5>
+                <h5 class="card-title text-center">Weather App</h5>
                 <img
-                  src="img/codeArt/investment-calculator-logo.png"
+                  src="img/codeArt/investment-calculator-logo.jpg"
                   class="card-img-top open-modal"
                   data-bs-toggle="modal"
                   data-bs-target="#infoModal"
-                  data-img="Inktober_01_thumb.jpg"
-                  data-title="Investment Calculator"
-                  data-description="This investment calculator was created in React."
+                  data-img="#"
+                  data-title="Weather App"
+                  data-description="This was created Vanilla JavaScript."
                   data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
                                   ]'
+                  alt="Weather App"
+                />
+                <p class="card-subtitle text-muted mt-2">
+                  <span class="text-primary pill-rounded">#HTML</span>,
+                  <span class="text-success">#CSS</span>,
+                  <span class="text-danger">#JavaScript</span>,
+                  <span class="text-warning">#API</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMBNAIL 4 -->
+          <div class="col-md-3 mb-3">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Trivia Game</h5>
+                <img
+                  src="img/codeArt/investment-calculator-logo.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="#"
+                  data-title="Trivia Game"
+                  data-description="This was created in React."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
+                                  ]'
+                  alt="Trivia Game"
+                />
+                <p class="card-subtitle text-muted mt-2">
+                  <span class="text-primary pill-rounded">#HTML</span>,
+                  <span class="text-success">#CSS</span>,
+                  <span class="text-danger">#JavaScript</span>,
+                  <span class="text-info">#Game</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ROW 3 -->
+        <div class="row">
+          <!-- Thumbnail 1 -->
+          <div class="col-md-3 mb-3">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Investment Calculator</h5>
+                <img
+                  src="img/codeArt/investment-calculator-logo.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="img/codeArt/investCalcScreenshot.jpg"
+                  data-title="Investment Calculator"
+                  data-description="This investment calculator takes an initial investment, annual investment, and expected return, calculating investment value, interest, total interest and invested capital over years. This app was created with React."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/dannyjive/React_Investment_Calculator/tree/main"} 
+                                            ]'
                   alt="Investment Calculator"
+                />
+                <p class="card-subtitle text-muted mt-2">
+                  <span class="text-primary pill-rounded">#HTML</span>,
+                  <span class="text-success">#CSS</span>,
+                  <span class="text-danger">#JavaScript</span>,
+                  <span class="text-info">#React</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnail 2 -->
+          <div class="col-md-3 mb-3">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Pokemon Cart</h5>
+                <img
+                  src="img/codeArt/investment-calculator-logo.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="#.jpg"
+                  data-title="Pokemon Shopping Cart"
+                  data-description="This was created in React."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
+                                            ]'
+                  alt="Pokemon Shopping Cart"
+                />
+                <p class="card-subtitle text-muted mt-2">
+                  <span class="text-primary pill-rounded">#HTML</span>,
+                  <span class="text-success">#CSS</span>,
+                  <span class="text-danger">#JavaScript</span>,
+                  <span class="text-info">#React</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnail 3 -->
+
+          <div class="col-md-3 mb-3">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Game of Thrones App</h5>
+                <img
+                  src="img/codeArt/investment-calculator-logo.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="#"
+                  data-title="Game of Thrones App"
+                  data-description="This was created in React."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
+                                            ]'
+                  alt="Game of Thrones App"
                 />
                 <p class="card-subtitle text-muted mt-2">
                   <span class="text-primary pill-rounded">#HTML</span>,
@@ -162,18 +411,129 @@
           <div class="col-md-3 mb-3">
             <div class="card mt-5">
               <div class="card-body">
-                <h5 class="card-title text-center">Investment Calculator</h5>
+                <h5 class="card-title text-center">Tic-Tac-Toe Game</h5>
                 <img
-                  src="img/codeArt/investment-calculator-logo.png"
+                  src="img/codeArt/investment-calculator-logo.jpg"
                   class="card-img-top open-modal"
                   data-bs-toggle="modal"
                   data-bs-target="#infoModal"
-                  data-img="Inktober_01_thumb.jpg"
-                  data-title="Investment Calculator"
-                  data-description="This investment calculator was created in React."
+                  data-img="#"
+                  data-title="Tic-Tac-Toe Game"
+                  data-description="This was created in React."
                   data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
-                                  ]'
+                                            ]'
+                  alt="Tic-Tac-Toe Game"
+                />
+                <p class="card-subtitle text-muted mt-2">
+                  <span class="text-primary pill-rounded">#HTML</span>,
+                  <span class="text-success">#CSS</span>,
+                  <span class="text-danger">#JavaScript</span>,
+                  <span class="text-info">#React</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ROW 4 -->
+        <div class="row">
+          <!-- Thumbnail 1 -->
+          <div class="col-md-3 mb-3">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Investment Calculator</h5>
+                <img
+                  src="img/codeArt/investment-calculator-logo.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="img/codeArt/investCalcScreenshot.jpg"
+                  data-title="Investment Calculator"
+                  data-description="This investment calculator takes an initial investment, annual investment, and expected return, calculating investment value, interest, total interest and invested capital over years. This app was created with React."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/dannyjive/React_Investment_Calculator/tree/main"} 
+                                    ]'
                   alt="Investment Calculator"
+                />
+                <p class="card-subtitle text-muted mt-2">
+                  <span class="text-primary pill-rounded">#HTML</span>,
+                  <span class="text-success">#CSS</span>,
+                  <span class="text-danger">#JavaScript</span>,
+                  <span class="text-info">#React</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnail 2 -->
+          <div class="col-md-3 mb-3">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Pokemon Cart</h5>
+                <img
+                  src="img/codeArt/investment-calculator-logo.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="#.jpg"
+                  data-title="Pokemon Shopping Cart"
+                  data-description="This was created in React."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
+                                    ]'
+                  alt="Pokemon Shopping Cart"
+                />
+                <p class="card-subtitle text-muted mt-2">
+                  <span class="text-primary pill-rounded">#HTML</span>,
+                  <span class="text-success">#CSS</span>,
+                  <span class="text-danger">#JavaScript</span>,
+                  <span class="text-info">#React</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnail 3 -->
+
+          <div class="col-md-3 mb-3">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Game of Thrones App</h5>
+                <img
+                  src="img/codeArt/investment-calculator-logo.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="#"
+                  data-title="Game of Thrones App"
+                  data-description="This was created in React."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
+                                    ]'
+                  alt="Game of Thrones App"
+                />
+                <p class="card-subtitle text-muted mt-2">
+                  <span class="text-primary pill-rounded">#HTML</span>,
+                  <span class="text-success">#CSS</span>,
+                  <span class="text-danger">#JavaScript</span>,
+                  <span class="text-info">#React</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- THUMBNAIL 4 -->
+          <div class="col-md-3 mb-3">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Tic-Tac-Toe Game</h5>
+                <img
+                  src="img/codeArt/investment-calculator-logo.jpg"
+                  class="card-img-top open-modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infoModal"
+                  data-img="#"
+                  data-title="Tic-Tac-Toe Game"
+                  data-description="This was created in React."
+                  data-links='[{"text":"Live Demo", "url":"https://example.com/demo1"},{"text":"GitHub", "url":"https://github.com/project1"} 
+                                    ]'
+                  alt="Tic-Tac-Toe Game"
                 />
                 <p class="card-subtitle text-muted mt-2">
                   <span class="text-primary pill-rounded">#HTML</span>,
@@ -248,6 +608,32 @@
                   `<a href="${link.url}" class="btn btn-primary m-1" target="_blank">${link.text}</a>`
               )
               .join("");
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const filterItems = document.querySelectorAll(".filter-item");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const filter = this.getAttribute("data-filter");
+
+            // Change active button styling
+            filterButtons.forEach((btn) => btn.classList.remove("btn-primary"));
+            this.classList.add("btn-primary");
+
+            // Show/Hide items based on filter
+            filterItems.forEach((item) => {
+              const categories = item.getAttribute("data-category").split(" "); // Split categories into array
+
+              if (filter === "all" || categories.includes(filter)) {
+                item.style.display = "block"; // Show matching items
+              } else {
+                item.style.display = "none"; // Hide non-matching items
+              }
+            });
           });
         });
       });

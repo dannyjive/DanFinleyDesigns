@@ -6,11 +6,10 @@
 
 body {
   font-family: "Eczar", serif;
-  
 }
 
 .link {
-  color: rgb(102, 159, 202) !important; 
+  color: rgb(102, 159, 202) !important;
   text-decoration: none;
 }
 
@@ -18,16 +17,18 @@ body {
   color: rgb(163, 195, 230) !important;
 }
 
-
 .bg-image {
   background-image: url(img/PinholeAbstracts-7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.custom-margin {
+  margin-top: 5rem;
+}
+
 #headshot {
   width: 300px;
-
 }
 
 .eczarh1 {
@@ -37,13 +38,13 @@ body {
   color: rgb(102, 159, 202);
 }
 
-#biblioCard li{
-    font-family: "Eczar", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    color: gray;
-    padding: .3em;
-  } 
+#biblioCard li {
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: gray;
+  padding: 0.3em;
+}
 
 h3 {
   font-family: "Eczar", serif;
@@ -95,7 +96,7 @@ hr {
 }
 
 iframe {
-filter: drop-shadow(5px 5px 5px gray);
+  filter: drop-shadow(5px 5px 5px gray);
 }
 
 .text-wrap {
