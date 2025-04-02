@@ -4,8 +4,14 @@
   
 } */
 
+
+
 body {
   font-family: "Eczar", serif;
+}
+
+.push-intr-cards-down{
+  padding-top: 200px;
 }
 
 .link {
@@ -26,8 +32,14 @@ body {
 .custom-margin {
   margin-top: 3.8rem;
   background-color: rgb(241, 248, 250);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 12px;
+
+}
+
+#intr-descrip{
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .btn-primary {
@@ -91,6 +103,9 @@ p {
 h6 {
   color: gray;
 }
+
+
+
 
 .card-title {
   font-family: "Eczar", serif;

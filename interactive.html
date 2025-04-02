@@ -31,9 +31,12 @@
   </head>
 
   <body class="bg-image">
+    <!-- NAV Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
         <a class="navbar-brand eczarh1" href="index.html">dan finley designs</a>
+
+        <!-- Hamburger Menu -->
         <button
           class="navbar-toggler"
           type="button"
@@ -45,6 +48,8 @@
         >
           <span class="navbar-toggler-icon"> </span>
         </button>
+
+        <!-- Nav Menu -->
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
@@ -53,14 +58,11 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">motion</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link " href="web.html">web</a>
-              </li> -->
             <li class="nav-item">
               <a class="nav-link" href="print.html">print</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link">code</a>
+              <a class="nav-link">interactive</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="illustration.html">illustration</a>
@@ -70,64 +72,91 @@
             </li>
           </ul>
         </div>
-        <div>
-          
-        </div>
-        
       </div>
     </nav>
-    <div>
-      <!-- Filter Buttons -->
 
-<div class="text-center  custom-margin">
- <button class="btn btn-primary btn-sm filter-btn " data-filter="all">
-   #all
- </button>
- <button class="btn btn-primary btn-sm filter-btn" data-filter="sass">
-   #sass
- </button>
- <button
-   class="btn btn-primary btn-sm filter-btn"
-   data-filter="bootstrap"
- >
-   #bootstrap
- </button>
- <button
-   class="btn btn-primary btn-sm filter-btn"
-   data-filter="javascript"
- >
-   #javascript
- </button>
- <button class="btn btn-primary btn-sm filter-btn" data-filter="react">
-   #react
- </button>
- <button class="btn btn-primary btn-sm filter-btn" data-filter="router">
-   #react-router
- </button>
- <button class="btn btn-primary btn-sm filter-btn" data-filter="redux">
-   #redux
- </button>
- <button class="btn btn-primary btn-sm filter-btn" data-filter="api">
-   #api
- </button>
- <button class="btn btn-primary btn-sm filter-btn" data-filter="game">
-   #game
- </button>
- <!-- <button class="btn btn-primary btn-sm filter-btn" data-filter="mongodb">
-   #mongodb
- </button> -->
-</div>
-    
+    <!-- Filter Buttons -->
+    <div class="fixed-top custom-margin">
+      <div class="container ">
+        <div class="row mt-2 ">
+          <!-- Description -->
+          <div class="justify-content-center d-flex">
+            <p class="col-8 text-center " id="intr-descrip">
+              Bringing design to life with code. In addition to graphic design
+              and motion graphics, I build interactive experiences using HTML,
+              CSS, JavaScript, and React. Explore my projects below.
+            </p>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="text-center">
+            <button class="btn btn-primary btn-sm filter-btn" data-filter="all">
+              #all
+            </button>
+            <button
+              class="btn btn-primary btn-sm filter-btn"
+              data-filter="sass"
+            >
+              #sass
+            </button>
+            <button
+              class="btn btn-primary btn-sm filter-btn"
+              data-filter="bootstrap"
+            >
+              #bootstrap
+            </button>
+            <button
+              class="btn btn-primary btn-sm filter-btn"
+              data-filter="javascript"
+            >
+              #javascript
+            </button>
+            <button
+              class="btn btn-primary btn-sm filter-btn"
+              data-filter="react"
+            >
+              #react
+            </button>
+            <button
+              class="btn btn-primary btn-sm filter-btn"
+              data-filter="router"
+            >
+              #react-router
+            </button>
+            <button
+              class="btn btn-primary btn-sm filter-btn"
+              data-filter="redux"
+            >
+              #redux
+            </button>
+            <button class="btn btn-primary btn-sm filter-btn" data-filter="api">
+              #api
+            </button>
+            <button
+              class="btn btn-primary btn-sm filter-btn"
+              data-filter="game"
+            >
+              #game
+            </button>
+            <!-- <button class="btn btn-primary btn-sm filter-btn" data-filter="mongodb">
+              #mongodb
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
     <main class="container">
- 
-        <!-- ROW 1 -->
-        <div class="row">
+      <div>
+        <!-- CARDS -->
+        <div class="row push-intr-cards-down">
           <!-- Thumbnail 1 -->
           <div
-            class="col-md-3 mb-3 filter-item "
+            class="col-md-3 mb-3 filter-item"
             data-category="html css javascript api"
           >
-            <div class="card mt-5">
+            <div class="card mt-4">
               <div class="card-body">
                 <h5 class="card-title text-center">Weather App</h5>
                 <img
@@ -151,7 +180,7 @@
             class="col-md-3 mb-3 filter-item"
             data-category="html css javascript bootstrap react redux"
           >
-            <div class="card mt-5">
+            <div class="card mt-4">
               <div class="card-body">
                 <h5 class="card-title text-center">Shopping Cart</h5>
                 <img
@@ -175,7 +204,7 @@
             class="col-md-3 mb-3 filter-item"
             data-category="html css javascript react api"
           >
-            <div class="card mt-5">
+            <div class="card mt-4">
               <div class="card-body">
                 <h5 class="card-title text-center">Game of Thrones App</h5>
                 <img
@@ -199,7 +228,7 @@
             class="col-md-3 mb-3 filter-item"
             data-category="html css javascript react game"
           >
-            <div class="card mt-5">
+            <div class="card mt-4">
               <div class="card-body">
                 <h5 class="card-title text-center">Tic-Tac-Toe Game</h5>
                 <img
@@ -337,8 +366,6 @@
             </div>
           </div>
         </div> -->
-
-
         </div>
       </div>
 
@@ -371,6 +398,7 @@
       </div>
     </main>
 
+    <!-- FOOTER -->
     <footer class="container">
       <div class="row">
         <div class="col"></div>
@@ -381,6 +409,7 @@
       </div>
     </footer>
 
+    <!-- SCRIPT -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const modalImage = document.getElementById("modalImage");
@@ -418,11 +447,11 @@
 
             // Change active button styling
             filterButtons.forEach((btn) => {
-                btn.classList.remove("btn-active"); 
-                btn.classList.add("btn-inactive"); 
+              btn.classList.remove("btn-active");
+              btn.classList.add("btn-inactive");
             });
 
-            this.classList.add("btn-active"); 
+            this.classList.add("btn-active");
 
             // Show/Hide items based on filter
             filterItems.forEach((item) => {
