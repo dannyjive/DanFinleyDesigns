@@ -104,9 +104,6 @@ h6 {
   color: gray;
 }
 
-
-
-
 .card-title {
   font-family: "Eczar", serif;
   font-weight: 800;
@@ -147,4 +144,19 @@ iframe {
 
 .text-wrap {
   width: 13em;
+}
+
+
+@media (max-width: 760px) {
+  .push-intr-cards-down{
+    padding-top: 350px;
+  }
+
+  .navbar-toggler {
+    z-index: 1100;
+  }
+
+  .custom-margin{
+    z-index: 900;
+  }
 }
