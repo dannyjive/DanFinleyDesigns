@@ -146,6 +146,25 @@ iframe {
   width: 13em;
 }
 
+#socialLinks {
+  list-style-type: none;
+  padding: 0;
+}
+
+#socialLinks li {
+  padding-bottom: 12px;
+}
+
+#socialLinks a:link {
+  color: rgb(102, 159, 202);
+  text-decoration: none;
+}
+
+#socialLinks a:hover {
+  text-decoration-line: underline;
+  color: rgb(163, 195, 230);
+}
+
 @media (max-width: 760px) {
   .push-intr-cards-down{
     padding-top: 350px;
