@@ -153,6 +153,7 @@ iframe {
 
 #socialLinks li {
   padding-bottom: 12px;
+  color: rgb(128, 128, 128)
 }
 
 #socialLinks a:link {
@@ -164,6 +165,8 @@ iframe {
   text-decoration-line: underline;
   color: rgb(163, 195, 230);
 }
+
+
 
 @media (max-width: 760px) {
   .push-intr-cards-down{
