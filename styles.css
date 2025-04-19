@@ -30,12 +30,21 @@ body {
 }
 
 .custom-margin {
-  margin-top: 3.8rem;
+
   background-color: rgb(241, 248, 250);
   padding-top: 5px;
   padding-bottom: 12px;
 
 }
+
+#filter-header {
+  position: fixed;
+  top: 62px; 
+  width: 100%;
+  z-index: 1030; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
 
 #intr-descrip{
   margin-top: 0;
