@@ -79,32 +79,98 @@
     </nav>
 
     <!-- MAIN -->
-    <main>
-      <div class="container">
-        <!-- RIVE CANVAS -->
-        <canvas id="canvas" width="250" height="250"></canvas>
+    <main class="container flex-grow-1">
+
+      <!-- Row One -->
+      <div class="row mt-5">
+        <!-- Padding Column -->
+        <div class="col"></div>
+
+        <!-- Central Columns Containing Cards -->
+
+        <!-- Rive Walk Cycle -->
+        <div class="col-md-3 mb-3">
+        
+          <div class="card mt-5">
+            <div
+              class="card-body"
+            >
+            <h5 class="card-title text-center">hover state</h5>
+            <!-- RIVE CANVAS -->
+        <canvas id="canvas" width="165" height="165"></canvas>
 
         <!-- RIVE PACKAGE SCRIPT -->
         <script src="https://unpkg.com/@rive-app/canvas"></script>
 
         <!-- RIVE FILES -->
         <script>
-          window.addEventListener("DOMContentLoaded", () => {
-            const r = new rive.Rive({
-              // src: "./rive/WalkCycleTest01.riv",
-              // src: "https://cdn.rive.app/animations/vehicles.riv",
+          const r = new rive.Rive({
+            src: "/rive/walkcycle.riv",
+            // src: "https://cdn.rive.app/animations/vehicles.riv",
+            canvas: document.getElementById("canvas"),
+            autoplay: true,
 
-              canvas: document.getElementById("canvas"),
-              autoplay: true,
+            stateMachines: "Walking",
 
-              stateMachines: "bumpy",
-       
-              onLoad: () => {
-                r.resizeDrawingSurfaceToCanvas();
-              },
-            });
+            onLoad: () => {
+              r.resizeDrawingSurfaceToCanvas();
+            },
           });
         </script>
+        </div>
+          </div>
+        </div>
+        <!-- Card - Kid Comics -->
+        <div class="col-md-3 mb-3">
+          <div class="card mt-5">
+            <div
+              class="card-body"
+              id="kidCard"
+              data-bs-toggle="modal"
+              data-bs-target="#kidModal"
+            >
+              <!-- data-bs-target points to modal ID -->
+              <h5 class="card-title text-center">children's comics</h5>
+
+              <img
+                src="img/comics/kid/octo/Octo_thumb.jpg"
+                class="card-img-top"
+                alt="kids comics thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Card - Mainstream Comics -->
+        <div class="col-md-3 mb-3">
+          <div class="card mt-5">
+            <div
+              class="card-body"
+              id="mainstreamCard"
+              data-bs-toggle="modal"
+              data-bs-target="#mainstreamModal"
+            >
+              <!-- data-bs-target points to modal ID -->
+              <h5 class="card-title text-center card-thumbnail">
+                mainstream comics
+              </h5>
+              <img
+                src="img/comics/mainstream/gothamKnights/GothamKnights_thumb.jpg"
+                class="card-img-top"
+                alt="mainstream comics thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Padding Column -->
+        <div class="col"></div>
+      </div>
+      <!-- End of Row One-->
+
+
+      <div class="container">
+        
       </div>
     </main>
 
