@@ -4,13 +4,11 @@
   
 } */
 
-
-
 body {
   font-family: "Eczar", serif;
 }
 
-.push-intr-cards-down{
+.push-intr-cards-down {
   padding-top: 200px;
 }
 
@@ -24,29 +22,26 @@ body {
 }
 
 .bg-image {
-  background-image: url(img/PinholeAbstracts-7.jpg);
+  background-image: url(../img/PinholeAbstracts-7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .custom-margin {
-
   background-color: rgb(241, 248, 250);
   padding-top: 5px;
   padding-bottom: 12px;
-
 }
 
 #filter-header {
   position: fixed;
-  top: 62px; 
+  top: 62px;
   width: 100%;
-  z-index: 1030; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  z-index: 1030;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-#intr-descrip{
+#intr-descrip {
   margin-top: 0;
   margin-bottom: 8px;
 }
@@ -119,6 +114,11 @@ h6 {
   color: rgb(102, 159, 202);
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
 #copyright {
   color: white;
   font-family: "Eczar", serif;
@@ -133,10 +133,32 @@ h6 {
   color: rgb(163, 195, 230);
 }
 
-.active {
-  text-decoration-line: underline;
-  color: rgb(102, 159, 202);
+.nav-link.active {
+  position: relative;
+  color: rgb(102, 159, 202) !important;
 }
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background: rgb(102, 159, 202);
+  transition: width 0.5s ease 1s;
+}
+
+.nav-link.active.animate-underline::after {
+  width: 100%;
+}
+
+/* .active {
+   border-bottom: 1px solid rgb(102, 159, 202);
+  padding-bottom: 1px;
+  text-decoration-line: underline;
+  color: rgb(102, 159, 202)!important;
+} */
 
 hr {
   color: white;
@@ -162,10 +184,10 @@ iframe {
 
 #socialLinks li {
   padding-bottom: 12px;
-  color: rgb(128, 128, 128)
+  color: rgb(128, 128, 128);
 }
 
-#socialLinks a:link {
+/* #socialLinks a:link {
   color: rgb(102, 159, 202);
   text-decoration: none;
 }
@@ -173,12 +195,14 @@ iframe {
 #socialLinks a:hover {
   text-decoration-line: underline;
   color: rgb(163, 195, 230);
+} */
+
+#socialLinks img {
+  height: 25px;
 }
 
-
-
 @media (max-width: 760px) {
-  .push-intr-cards-down{
+  .push-intr-cards-down {
     padding-top: 350px;
   }
 
@@ -186,7 +210,7 @@ iframe {
     z-index: 1100;
   }
 
-  .custom-margin{
+  .custom-margin {
     z-index: 900;
   }
 }

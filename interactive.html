@@ -19,7 +19,7 @@
     />
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -62,7 +62,7 @@
               <a class="nav-link" href="print.html">print</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="interactive.html">interactive</a>
+              <a class="nav-link active">interactive</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="illustration.html">illustration</a>
@@ -80,7 +80,6 @@
 
     <!-- MAIN -->
     <main class="container flex-grow-1">
-
       <!-- Row One -->
       <div class="row mt-5">
         <!-- Padding Column -->
@@ -90,39 +89,36 @@
 
         <!-- Rive Walk Cycle -->
         <div class="col-md-3 mb-3">
-        
-          <div class="card mt-5">
-            <div
-              class="card-body"
-            >
-            <h5 class="card-title text-center">hover state</h5>
-            <!-- RIVE CANVAS -->
-        <canvas id="canvas" width="165" height="165"></canvas>
+          <div class="card mt-5 fade-in">
+            <div class="card-body">
+              <h5 class="card-title text-center">hover state</h5>
+              <!-- RIVE CANVAS -->
+              <canvas id="canvas" width="165" height="165"></canvas>
 
-        <!-- RIVE PACKAGE SCRIPT -->
-        <script src="https://unpkg.com/@rive-app/canvas"></script>
+              <!-- RIVE PACKAGE SCRIPT -->
+              <script src="https://unpkg.com/@rive-app/canvas"></script>
 
-        <!-- RIVE FILES -->
-        <script>
-          const r = new rive.Rive({
-            src: "/rive/walkcycle.riv",
-            // src: "https://cdn.rive.app/animations/vehicles.riv",
-            canvas: document.getElementById("canvas"),
-            autoplay: true,
+              <!-- RIVE FILES -->
+              <script>
+                const r = new rive.Rive({
+                  src: "./img/rive/walkcycle.riv",
+                  // src: "https://cdn.rive.app/animations/vehicles.riv",
+                  canvas: document.getElementById("canvas"),
+                  autoplay: true,
 
-            stateMachines: "Walking",
+                  stateMachines: "Walking",
 
-            onLoad: () => {
-              r.resizeDrawingSurfaceToCanvas();
-            },
-          });
-        </script>
-        </div>
+                  onLoad: () => {
+                    r.resizeDrawingSurfaceToCanvas();
+                  },
+                });
+              </script>
+            </div>
           </div>
         </div>
         <!-- Card - Kid Comics -->
         <div class="col-md-3 mb-3">
-          <div class="card mt-5">
+          <div class="card mt-5 fade-in">
             <div
               class="card-body"
               id="kidCard"
@@ -168,10 +164,7 @@
       </div>
       <!-- End of Row One-->
 
-
-      <div class="container">
-        
-      </div>
+      <div class="container"></div>
     </main>
 
     <!-- FOOTER -->
@@ -186,14 +179,17 @@
     </footer>
 
     <!-- SCRIPT -->
+    <!-- GSAP Library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
-    <!-- COPYRIGHT SCRIPT -->
-    <script>
-      const year = new Date().getFullYear();
-      document.getElementById(
-        "copyright"
-      ).textContent = `this website was designed and coded by © dan finley ${year}`;
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <!-- Import gsap.js -->
+    <script src="./js/gsapScripts.js"></script>
+
+    <!-- Import scripts.js -->
+    <script src="./js/script.js"></script>
 
     <!-- BOOTSTRAP SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
