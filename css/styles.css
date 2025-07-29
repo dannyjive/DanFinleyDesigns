@@ -201,6 +201,19 @@ iframe {
   height: 25px;
 }
 
+.carousel-control-prev {
+  filter: drop-shadow(1px 1px rgb(102, 159, 202))
+    drop-shadow(1px -1px rgb(102, 159, 202))
+    drop-shadow(-1px 1px rgb(102, 159, 202))
+    drop-shadow(-1px -1px rgb(102, 159, 202));
+}
+.carousel-control-next {
+  filter: drop-shadow(1px 1px rgb(102, 159, 202))
+    drop-shadow(1px -1px rgb(102, 159, 202))
+    drop-shadow(-1px 1px rgb(102, 159, 202))
+    drop-shadow(-1px -1px rgb(102, 159, 202));
+}
+
 @media (max-width: 760px) {
   .push-intr-cards-down {
     padding-top: 350px;
