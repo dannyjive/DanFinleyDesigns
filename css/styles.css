@@ -78,6 +78,21 @@ body {
   width: 300px;
 }
 
+#photoport {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+.awardLink {
+  color: gray;
+}
+
+.awardLink:hover{
+  color: rgb(79, 146, 198);
+}
+
+
 .eczarh1 {
   font-family: "Eczar", serif;
   font-size: x-large;
@@ -106,6 +121,10 @@ p {
 
 h6 {
   color: gray;
+}
+
+.tall-card {
+  min-height: 500px;
 }
 
 .card-title {
