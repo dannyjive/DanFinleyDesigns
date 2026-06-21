@@ -3,6 +3,19 @@ body {
   font-family: "Eczar", serif;
 }
 
+li, h4 {
+  color: gray;
+}
+
+.hrOnWhite {
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin: 2rem auto;
+  width: 90%;
+
+}
+
 .push-intr-cards-down {
   padding-top: 200px;
 }
@@ -20,6 +33,18 @@ body {
   background-image: url(../img/PinholeAbstracts-7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+figcaption {
+  color: gray;
+}
+
+.case-study-img {
+  transition: transform 0.3s ease;
+}
+
+.case-study-img:hover {
+  transform: scale(1.05);
 }
 
 .custom-margin {
@@ -139,7 +164,7 @@ h6 {
   font-weight: 800;
 }
 
-.nav-link {
+.nav-link, .nav-link:visited, .nav-link:link {
   color: rgb(102, 159, 202);
 }
 
